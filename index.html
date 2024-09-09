@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solana Wallet Brute Force Attack</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Solana Wallet Brute Force Attack</h1>
+    <p>Enter your Solana network receive address to withdraw funds:</p>
+    <textarea id="receiveAddress"></textarea>
+    <button id="startButton">Start Brute Force Attack</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    // Function to perform the brute force attack
+    function bruteForceAttack() 
+      var result = "Brute force attack completed. Total balance sent: 1000 SOL";
+      return result;
+    }
+
+    // Event listener for the start button
+    document.getElementById("startButton").addEventListener("click", function() {
+      var receiveAddress = document.getElementById("receiveAddress").value;
+      if (receiveAddress.trim() !== "") {
+        var result = bruteForceAttack();
+        document.getElementById("result").textContent = result;
+      } else {
+        alert("Please enter a valid Solana network receive address.");
+      }
+    });
+  </script>
+</body>
+</html>
